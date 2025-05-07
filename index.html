@@ -91,6 +91,21 @@
         .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555; font-weight: bold;}
          hr { border: none; border-top: 1px solid #eee; margin: 8px 0; } /* Subtle separator */
          .subtitle { font-size: 0.9em; color: #e0e0e0; margin-top: 5px;} /* Subtitle style from example */
+
+         /* Ensure list styling within Action column is consistent */
+         .content td ul, .content td ol {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+         .content td li {
+            margin-bottom: 3px; /* Slightly tighter list spacing */
+        }
+        /* Style for strong tag inside action column to match bold step text */
+        .content td strong { font-weight: bold; display: inline; margin-bottom: 0;}
+        /* Reset display for the strong tag used for Step labels */
+        .content td > strong { display: block; margin-bottom: 5px;}
+
+
     </style>
     <script>
         // Basic script to ensure details elements work consistently if needed,
@@ -114,23 +129,23 @@
                             <strong>🎯 Objetivo de la Sesión:</strong>
                             <ul>
                                 <li>Refinar la apariencia visual de las escenas principales (Inicial, Mejor, Peor).</li>
-                                <li>Ajustar la posición y el tamaño de los personajes y elementos clave para mejorar la composición y claridad.</li>
-                                <li>Opcionalmente, añadir texto simple y legible donde sea necesario (ej. instrucciones, feedback).</li>
-                                <li>Asegurar que los cambios visuales no afecten negativamente la funcionalidad programada.</li>
+                                <li>Ajustar la posición y el tamaño de los personajes y elementos clave.</li>
+                                <li>Opcionalmente, añadir texto simple y legible.</li>
+                                <li>Asegurar que los cambios visuales no afecten la funcionalidad.</li>
                                 <li>Fomentar el ojo crítico del Diseñador/a y la precisión del Constructor/a.</li>
                             </ul>
                         </td>
                         <td style="width: 50%; padding: 10px;">
-                            <strong>🔑 Entregable Clave:</strong> Proyecto Scratch Jr. con mejoras visuales implementadas en las escenas principales (posiciones y tamaños ajustados, texto opcional añadido), manteniendo la funcionalidad intacta.
+                            <strong>🔑 Entregable Clave:</strong> Proyecto Scratch Jr. con mejoras visuales implementadas, manteniendo la funcionalidad.
                             <br><br>
                             <strong>⏱️ Duración Estimada:</strong> 40 minutos.
                             <br><br>
                             <strong>🛠️ Materiales Específicos:</strong>
                             <ul>
                                 <li>Dispositivos con Scratch Jr. y el proyecto guardado de la Sesión 4.</li>
-                                <li>Dibujos originales de la Fase 2 (para comparación visual).</li>
-                                <li>Tablero Kanban con el estado actualizado de la Sesión 4.</li>
-                                <li>Nuevas tarjetas de tareas para Kanban: "Ajustar Posiciones Escena Inicial", "Ajustar Posiciones Escena Mejor/Peor", "Añadir Texto Simple".</li>
+                                <li>Dibujos originales de la Fase 2.</li>
+                                <li>Tablero Kanban actualizado.</li>
+                                <li>Nuevas tarjetas Kanban: "Ajustar Posiciones Escena Inicial", "Ajustar Posiciones Escena Mejor/Peor", "Añadir Texto Simple".</li>
                             </ul>
                         </td>
                     </tr>
@@ -149,10 +164,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1 (2 min): Revisión y Objetivo del Día</strong>
-                            <br>Reunir a los equipos con su proyecto abierto.
-                            <br>Preguntar qué añadieron en la sesión anterior (movimiento/sonido).
-                            <br><strong>Proyectar Diapositiva 1</strong> (Título de la Sesión + Iconos de Pincel, Lupa, Regla/Herramienta de ajuste).
+                            <strong>Paso 1: Revisión y Objetivo del Día</strong>
+                            <ul>
+                                <li>Reunir a los equipos con su proyecto abierto.</li>
+                                <li>Preguntar qué añadieron en la sesión anterior.</li>
+                                <li><strong>Proyectar Diapositiva 1</strong>.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Hola, artistas digitales! ¿Listos para darle el toque final a nuestras escenas?"
@@ -164,13 +181,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2 (3 min): Roles y Kanban</strong>
-                             <br>Enfatizar que el/la **Diseñador/a de Historia** lidera hoy la revisión visual. Revisar roles (Constructor/a ejecuta ajustes, Probador/a verifica).
-                             <br>Permitir rotación si se desea, confirmar roles.
-                             <br>Añadir tarjetas "Ajustar Posiciones Escena Inicial", "Ajustar Posiciones Escena Mejor/Peor", "Añadir Texto Simple" a "Tareas por Hacer" en Kanban.
+                            <strong>Paso 2: Roles y Kanban</strong>
+                             <ul>
+                                 <li>Enfatizar que el/la <strong>Diseñador/a</strong> lidera hoy. Revisar roles.</li>
+                                 <li>Permitir rotación si se desea, confirmar roles.</li>
+                                 <li>Añadir tarjetas "Ajustar Posiciones Escena Inicial", "Ajustar Posiciones Escena Mejor/Peor", "Añadir Texto Simple" a "Tareas por Hacer".</li>
+                             </ul>
                         </td>
                         <td>
-                            "¡Hoy, nuestro/a **Diseñador/a de Historia** tiene una misión especial! Será nuestro/a director/a de arte, comparando la pantalla con los dibujos originales y diciendo qué podemos mejorar."
+                            "¡Hoy, nuestro/a <strong>Diseñador/a de Historia</strong> tiene una misión especial! Será nuestro/a director/a de arte, comparando la pantalla con los dibujos originales y diciendo qué podemos mejorar."
                             <br><br>
                             "El/La Constructor/a será el 'maestro del ajuste', moviendo y cambiando tamaños. Y el/la Probador/a se asegurará de que todo siga funcionando y se vea aún mejor."
                              <br><br>
@@ -196,12 +215,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1 (10 min): Revisión y Ajuste de Posiciones/Tamaños</strong>
-                            <br>El **Diseñador/a** lidera: Compara CADA escena (Inicial, Mejor, Peor) en Scratch Jr. con los dibujos originales. Señala discrepancias o mejoras ("El Héroe debería estar más a la izquierda", "El Villano se ve muy pequeño aquí").
-                            <br>El **Constructor/a** realiza los ajustes indicados usando las herramientas de Scratch Jr. (arrastrar personajes/objetos, usar bloques Azul Oscuro 'Grow'/'Shrink' si es necesario cambiar tamaño programáticamente, o ajustar tamaño en el editor de personajes).
-                            <br><strong>Proyectar Diapositiva 2</strong> (Mostrar iconos/herramientas clave de Scratch Jr.: Dedo arrastrando un personaje, bloques 'Grow'/'Shrink', quizás el icono del editor de personajes).
-                            <br>El **Probador/a** observa los cambios y da feedback ("Sí, ahí se ve mejor", "Ahora tapa un poco la salida").
-                            <br>Mover tarjetas "Ajustar Posiciones..." a "¡Haciendo Ahora!" / "¡Listo para Probar!".
+                            <strong>Paso 1: Revisión y Ajuste de Posiciones/Tamaños</strong>
+                            <ul>
+                                <li>El <strong>Diseñador/a</strong> lidera la comparación de escenas con dibujos y señala mejoras.</li>
+                                <li>El <strong>Constructor/a</strong> realiza los ajustes indicados.</li>
+                                <li><strong>Proyectar Diapositiva 2</strong>.</li>
+                                <li>El <strong>Probador/a</strong> observa y da feedback.</li>
+                                <li>Mover tarjetas "Ajustar Posiciones..." en Kanban.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Diseñadores, a trabajar! Abran bien los ojos y comparen cada escena en la tablet con sus dibujos originales."
@@ -219,13 +240,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2 (10 min): Añadir Texto Simple (Opcional)</strong>
-                            <br>El equipo decide si necesita añadir algún texto corto y claro (Ej: "¡Tú Eliges!" en la Escena Inicial, "¡Bien Hecho!" en la Mejor, "¡Oh no!" en la Peor).
-                            <br>Si deciden añadir texto, el **Constructor/a** usa la herramienta de texto de Scratch Jr. (icono 'Abc') para escribirlo.
-                            <br>El **Diseñador/a** ayuda a elegir dónde colocar el texto y quizás el color para que sea legible.
-                            <br><strong>Proyectar Diapositiva 3</strong> (Mostrar icono 'Abc' de Scratch Jr. y un ejemplo simple de texto añadido en una escena).
-                            <br>El **Probador/a** verifica que el texto se lea bien y no tape nada importante.
-                            <br>Mover tarjeta "Añadir Texto Simple" a "¡Haciendo Ahora!" / "¡Listo para Probar!" si se realiza esta tarea.
+                            <strong>Paso 2: Añadir Texto Simple (Opcional)</strong>
+                            <ul>
+                                <li>Equipo decide si necesita añadir texto.</li>
+                                <li>Si sí, el <strong>Constructor/a</strong> usa la herramienta de texto.</li>
+                                <li>El <strong>Diseñador/a</strong> ayuda con ubicación y color.</li>
+                                <li><strong>Proyectar Diapositiva 3</strong>.</li>
+                                <li>El <strong>Probador/a</strong> verifica legibilidad.</li>
+                                <li>Mover tarjeta "Añadir Texto Simple" en Kanban si se realiza.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Equipos, piensen! ¿Necesitamos alguna palabra en nuestras escenas para que se entiendan mejor?"
@@ -245,11 +268,13 @@
                     </tr>
                      <tr>
                         <td>
-                            <strong>Paso 3 (10 min): Verificación Visual Final y Kanban</strong>
-                            <br>El **Probador/a** (con ayuda del **Diseñador/a**) realiza una última revisión visual COMPLETA de las 3 escenas.
-                            <br>Verificar que todos los ajustes se ven bien, son consistentes y no han roto ninguna funcionalidad (clics, movimientos, sonidos).
-                            <br>El **Constructor/a** realiza ajustes mínimos finales si es necesario.
-                            <br>Mover todas las tarjetas de la sesión a "✅ ¡Terminado!" si el equipo está satisfecho con el pulido visual.
+                            <strong>Paso 3: Verificación Visual Final y Kanban</strong>
+                            <ul>
+                                <li>El <strong>Probador/a</strong> (con ayuda del <strong>Diseñador/a</strong>) realiza revisión visual completa de las 3 escenas.</li>
+                                <li>Verificar ajustes, consistencia y funcionalidad.</li>
+                                <li>El <strong>Constructor/a</strong> realiza ajustes finales si es necesario.</li>
+                                <li>Mover tarjetas a "✅ ¡Terminado!".</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Última revisión, equipo de diseño!"
@@ -278,8 +303,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1 (2 min): Muestra de Escenas Pulidas (Opcional)</strong>
-                            <br>Invitar a 1-2 equipos a mostrar brevemente una escena donde hayan hecho mejoras visuales notables.
+                            <strong>Paso 1: Muestra de Escenas Pulidas (Opcional)</strong>
+                            <ul>
+                                <li>Invitar a 1-2 equipos a mostrar brevemente mejoras visuales.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Guau, equipos! ¡Sus aventuras ahora no solo funcionan, sino que se ven espectaculares!"
@@ -289,10 +316,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2 (2 min): Guardar Proyecto (¡Fundamental!)</strong>
-                            <br>Guiar EXPLICITAMENTE a los Constructores para guardar la versión pulida del proyecto.
-                            <br>Asegurarse de que todos guarden.
-                            <br><strong>Proyectar Diapositiva 4</strong> (Icono grande de Guardar + Mensaje "¡Guarda tu Obra Maestra Visual!").
+                            <strong>Paso 2: Guardar Proyecto (¡Fundamental!)</strong>
+                            <ul>
+                                <li>Guiar EXPLICITAMENTE para guardar la versión pulida.</li>
+                                <li>Asegurarse de que todos guarden.</li>
+                                <li><strong>Proyectar Diapositiva 4</strong>.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Momento súper importante! ¡Hay que guardar esta versión tan pulida y bonita!"
@@ -304,9 +333,11 @@
                     </tr>
                      <tr>
                         <td>
-                            <strong>Paso 3 (1 min): Próximos Pasos y Cierre</strong>
-                            <br>Anunciar brevemente el objetivo de la Sesión 6 (Pruebas Detalladas / Calidad Avanzada).
-                            <br>Felicitar final.
+                            <strong>Paso 3: Próximos Pasos y Cierre</strong>
+                            <ul>
+                                <li>Anunciar brevemente el objetivo de la Sesión 6.</li>
+                                <li>Felicitar final.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Felicidades, diseñadores y artistas! Han refinado sus escenas y ahora impactan mucho más."
